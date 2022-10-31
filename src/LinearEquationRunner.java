@@ -20,8 +20,13 @@ public class LinearEquationRunner {
         int y1 = Integer.parseInt(coord1arr[3]);
 
         coord2 = coord2.replaceAll("\\D", " ");
-        String [] coord2arr = coord1.split(" ", 5);
+        String [] coord2arr = coord2.split(" ", 5);
         int x2 = Integer.parseInt(coord2arr[1]);
         int y2 = Integer.parseInt(coord2arr[3]);
+
+        System.out.println(x1);
+        System.out.println(y1);
+        System.out.println(x2);
+        System.out.println(y2);
     }
 }
