@@ -24,9 +24,16 @@ public class LinearEquationRunner {
         int x2 = Integer.parseInt(coord2arr[1]);
         int y2 = Integer.parseInt(coord2arr[3]);
 
-        System.out.println(x1);
-        System.out.println(y1);
-        System.out.println(x2);
-        System.out.println(y2);
+        LinearEquation equation = new LinearEquation(x1, y1, x2, y2);
+        if (x1 == x2) {
+            System.out.println("these points are on a vertical line: x = " + x1);
+        }
+        else {
+            System.out.println(equation.lineInfo());
+            System.out.print("Enter a value for x: ");
+            double ecks = scan.nextDouble();
+            System.out.println("Coordinate for x: " + equation.coordinateForX(ecks));
+        }
+        scan.close();
     }
 }
