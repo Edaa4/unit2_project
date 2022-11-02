@@ -20,21 +20,31 @@ public LinearEquation(int x1, int y1, int x2, int y2){
 
 
     public double yIntercept(){
-        return y1 - roundedToHundredth((slope() * x1));
+        return roundedToHundredth(y1 - (slope() * x1));
     }
 
 
     public double slope(){
-        return roundedToHundredth((y2-y1))/roundedToHundredth((x2-x1));
+        return roundedToHundredth((y2-y1)/(x2-x1));
     }
 
 
     public String equation(){
         if (yIntercept() < 0){
-            return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x - " + Math.abs(yIntercept());
+            if ((y2 - y1) % (x2 - x1) == 0) {
+                return "y = " + (y2 - y1) / (x2 - x1) + "x - " + Math.abs(yIntercept());
+            }
+            else{
+                return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x - " + Math.abs(yIntercept());
+            }
         }
         else {
-            return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x + " + yIntercept();
+            if ((y2 - y1) % (x2 - x1) == 0){
+                return "y = " + (y2 - y1)/(x2 - x1) + "x + " + yIntercept();
+            }
+            else {
+                return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x + " + yIntercept();
+            }
         }
     }
 
@@ -44,11 +54,7 @@ public LinearEquation(int x1, int y1, int x2, int y2){
     }
 
     public double roundedToHundredth(double toRound) {
-    if (toRound > 0) {
         return Math.round(toRound * 100.0) / 100.0;
-    }
-    else
-        return Math.round(toRound * 100.0) + 0.5 / 100.0;
     }
 
 

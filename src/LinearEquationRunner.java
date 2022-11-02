@@ -12,17 +12,12 @@ public class LinearEquationRunner {
         System.out.println();
         System.out.print("Enter the second coordinate: ");
         String coord2 = scan.nextLine();
-        scan.close();
 
-        coord1 = coord1.replaceAll("\\D", " ");
-        String [] coord1arr = coord1.split(" ", 5);
-        int x1 = Integer.parseInt(coord1arr[1]);
-        int y1 = Integer.parseInt(coord1arr[3]);
+        int x1 = Integer.parseInt(coord1.substring(1, coord1.indexOf(",")));
+        int y1 = Integer.parseInt(coord1.substring(coord1.indexOf(" ") + 1, coord1.indexOf(")")));
 
-        coord2 = coord2.replaceAll("\\D", " ");
-        String [] coord2arr = coord2.split(" ", 5);
-        int x2 = Integer.parseInt(coord2arr[1]);
-        int y2 = Integer.parseInt(coord2arr[3]);
+        int x2 = Integer.parseInt(coord2.substring(1, coord2.indexOf(",")));
+        int y2 = Integer.parseInt(coord2.substring(coord2.indexOf(" ") + 1, coord2.indexOf(")")));
 
         LinearEquation equation = new LinearEquation(x1, y1, x2, y2);
         if (x1 == x2) {

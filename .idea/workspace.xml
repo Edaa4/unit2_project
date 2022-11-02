@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9b63029-7d08-40d5-b218-6276a7c051aa" name="Changes" comment="">
+    <list default="true" id="f9b63029-7d08-40d5-b218-6276a7c051aa" name="Changes" comment="BIG BIG BIG UPDATE WOW">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquationRunner.java" afterDir="false" />
@@ -39,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Running">
+  <component name="RunManager" selected="Application.LinearEquationRunner">
     <configuration name="LinearEquationRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinearEquationRunner" />
       <module name="unit2_project" />
@@ -61,10 +61,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testingtesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testingtesting" />
+      <module name="unit2_project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Running" />
         <item itemvalue="Application.LinearEquationRunner" />
+        <item itemvalue="Application.Testingtesting" />
+        <item itemvalue="Application.Running" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -78,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666016077676</updated>
     </task>
+    <task id="LOCAL-00001" summary="BIG BIG BIG UPDATE WOW">
+      <created>1667279247927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667279247927</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BIG BIG BIG UPDATE WOW" />
+    <option name="LAST_COMMIT_MESSAGE" value="BIG BIG BIG UPDATE WOW" />
   </component>
 </project>
